@@ -153,3 +153,85 @@ color: var(--Purple-500);
 font-style: italic;
 }
 
+@media (min-width: 1000px) {
+    .grid-container {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "seven one one four"
+            "seven one one four"
+            "eight two three four"
+            "eight six five five";
+    }
+
+    .one {
+        grid-area: one;
+    }
+
+    .two {
+        grid-area: two;
+    }
+
+    .three {
+        grid-area: three;
+    }
+
+    .four {
+        grid-area: four;
+    }
+    .five{
+        grid-area: five;
+    }
+    .six{
+        grid-area: six;
+    }
+    .seven{
+        grid-area: seven;
+    }
+    .eight{
+        grid-area: eight;
+    }
+
+    article {
+        width: 100%;
+    }
+
+    .img-container {
+        width: 100%;
+    }
+
+    .img-container-small {
+        width: 100%;
+    }
+
+    .heading {
+        font-size: 3rem;
+    }
+
+    .multiple-platforms p,
+    .consistent-schedule p,
+    .schedule-posts p,
+    .grow-followers p,
+    .create-content p {
+        font-size: 1.5rem;
+    }
+
+    .grow-followers p {
+        font-size: 2rem;
+        line-height: 2rem;
+        width: 100%;
+    }
+
+    .audience-growth p {
+        font-size: 3rem;
+    }
+
+    .audience-growth span {
+        font-size: 1.5rem;
+    }
+
+    .create-content p,
+    .ai-content p {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+}
