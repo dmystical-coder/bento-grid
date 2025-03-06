@@ -1,0 +1,155 @@
+:root {
+  font-size: 18px;
+  --Purple-100: hsl(254, 88%, 90%);
+  --Purple-500: hsl(256, 67%, 59%);
+  --Yellow-100: hsl(31, 66%, 93%);
+  --Yellow-500: hsl(39, 100%, 71%);
+  --White: hsl(0, 0%, 100%);
+  --Black: hsl(0, 0%, 7%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #F5F5F5;
+}
+
+main {
+  font-family: "DM Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(1fr, 8);
+  gap: 36px;
+}
+
+article {
+  color: var(--Black);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  width: 345px;
+}
+.img-container {
+  width: 300px;
+}
+.img-container-small {
+  width: 200px;
+}
+.img-container img {
+  width: 100%;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+p {
+  font-size: 1rem;
+}
+
+.white-bg {
+  background-color: var(--White);
+}
+.yellow-dark-bg {
+  background-color: var(--Yellow-500);
+}
+.yellow-light-bg {
+  background-color: var(--Yellow-100);
+}
+.purple-dark-bg {
+  color: var(--White);
+  background-color: var(--Purple-500);
+}
+.purple-light-bg {
+  background-color: var(--Purple-100);
+}
+
+.tenx {
+  color: #f9ca84;
+}
+
+.heading {
+  align-items: center;
+  gap: 24px;
+  text-align: center;
+  padding: 32px;
+}
+
+.multiple-platforms,
+.consistent-schedule,
+.schedule-posts,
+.audience-growth {
+  gap: 16px;
+  text-align: left;
+  padding: 16px 11px;
+}
+
+.multiple-platforms p,
+.consistent-schedule p,
+.schedule-posts p,
+.grow-followers p,
+.create-content p {
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.consistent-schedule {
+  padding-bottom: 0;
+}
+.consistent-schedule .img-container {
+  display: flex;
+}
+
+.schedule-posts {
+  text-align: center;
+  align-self: center;
+}
+.schedule-posts .img-container, .grow-followers .img-container {
+  margin: 0 auto;
+}
+.schedule-posts span {
+  padding-inline: 16px;
+}
+
+.grow-followers, .create-content, .ai-content{
+    gap: 24px;
+    padding: 24px;
+    align-self: center;
+}
+
+.grow-followers p{
+    font-size: 1.5rem;
+    line-height: 1.35rem;
+    margin: 0 auto;
+    text-align: center;
+    width: 200px;
+}
+.audience-growth p{
+    font-size: 2.5rem;
+}
+
+.audience-growth span{
+display: block;
+font-size: 1rem;
+}
+
+.create-content p, .ai-content p{
+line-height: 1.5rem;
+font-weight: 500;
+font-size: 1.5rem;
+}
+
+.create-content span{
+color: var(--Purple-500);
+font-style: italic;
+}
+
